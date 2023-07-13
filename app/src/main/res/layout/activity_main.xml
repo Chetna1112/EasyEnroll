@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/cool_bg">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:drawableStart="@drawable/user"
+            android:id="@+id/editUserName"
+            android:hint="Enter Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <EditText
+            android:drawableStart="@drawable/password"
+            android:id="@+id/editPassword"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <EditText
+            android:drawableStart="@drawable/email"
+            android:id="@+id/editEmail"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Registerbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="160dp"
+            android:text="Register"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:outlineAmbientShadowColor="@color/black"/>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_below="@id/linearLayout"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Already Registered?\nClick Here To Login">
+
+    </TextView>
+
+</RelativeLayout>
